@@ -1,0 +1,51 @@
+body, html {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    border-radius: 0.5vw;
+    position: sticky;
+    top:10px;
+
+}
+
+header a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 2vw;
+    padding:1.5vw;
+    margin: 0vw 2vw 0vw 2vw;
+    transition: 0.5s;
+
+}
+header a:hover{
+    text-decoration: underline;
+    background-color: rgb(52, 160, 56);
+    transition: 0.5s;
+    border-radius: 0.5vw;
+}
+
+.about-us{
+    background-color: rgb(42, 42, 42);
+    border-radius: 0.5vw;
+    color:white;
+    padding:0.5vw 2vw 0.5vw 2vw;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.info a{
+    color:aqua;
+}
+
+@media (min-width:1000px){
+    header a{
+        font-size:1vw;
+    }
+}

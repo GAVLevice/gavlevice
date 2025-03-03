@@ -1,0 +1,23 @@
+.banner-box{
+    object-fit: scale-down;
+}
+
+.banner-1{
+    top:2vw;
+    background-image: url(../img/banner-1.jpg);
+    height:15vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:0.5vw solid rgb(53, 53, 53);
+}
+
+.banner-1 h1{
+    color:rgb(255, 255, 255);
+    text-shadow:1vw 1vw 1vw black;
+    font-size: 8vw;
+    font-weight: bold;
+}

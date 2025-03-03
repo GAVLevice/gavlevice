@@ -1,0 +1,36 @@
+.subject{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    padding:1vw;
+    font-weight: bold;
+}
+
+.subject .subjects{
+    display:none;
+}
+
+.subjects{
+    display:none;
+}
+.subject::before{
+    content:"> ";
+}
+.subject:hover, .accordion.active .subject{
+    cursor:pointer;
+    color:white;
+    background-color: rgb(34, 34, 34);
+    padding-left:2vw;
+    transition: 0.5s;
+}
+
+.accordion.active .subjects{
+    display:flex;
+    flex-direction: row;
+    padding:1vw;
+    font-size: 20px;
+    text-align: left;
+}
+
+.accordion.active .subject::before{
+    content:"˅ "
+}
