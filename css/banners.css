@@ -16,7 +16,7 @@
 }
 
 .banner-1 h1{
-    color:rgb(65, 188, 219);
+    color:#26ba3c;
     text-shadow:0.5vw 0.5vw 0.5vw rgb(0, 0, 0);
     font-size: 8vw;
     font-weight: bold;
@@ -24,7 +24,7 @@
 
 .banner-2{
     top:2vw;
-    background-image: url(../img/banner-2.jpg);
+    background-image: url(../img/banner-3.jpg);
     height:15vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,8 +36,17 @@
 }
 
 .banner-2 h1{
-    color:rgb(65, 188, 219);
+    color:rgb(255, 255, 255);
     text-shadow:0.5vw 0.5vw 0.5vw rgb(0, 0, 0);
     font-size: 8vw;
     font-weight: bold;
+}
+
+@media (min-width:1000px){
+    .banner-1, .banner-2{
+        height:9vw;
+    }
+    .banner-1 h1, .banner-2 h1{
+        font-size: 5vw;
+    }
 }
