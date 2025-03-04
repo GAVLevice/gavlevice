@@ -1,5 +1,5 @@
 body, html {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 20);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,13 +39,68 @@ header a:hover{
     font-size: 20px;
     
 }
-
 .info a{
-    color:aqua;
+    color:rgb(66, 54, 149);
 }
+
+footer{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    background-color: rgb(32, 32, 32);
+    padding:0.2vw 2vw 0.2vw 2vw;
+}
+
+footer .footer-content{
+    display:flex;
+    flex-direction: row;
+    font-size: 2vw;
+}
+
+
+footer a{
+    color:orange;
+    margin:2vw;
+}
+footer h3, footer p{
+    margin:2vw;
+}
+footer a:hover{
+    color:rgb(255, 98, 0);
+}
+
+
+.credits{
+    color:rgb(146, 146, 146);
+    font-size: 1.2vw;
+}
+.iframe-box{
+    margin-left: auto;
+    width:45vw;
+    max-width: 600px;
+}
+.iframe-box iframe{
+    width:100%;
+    height:15vw;
+    margin-top:1vw;
+    border-radius: 0.5vw;
+}
+
+.triedy{
+    color:rgb(0, 255, 153);
+}
+
 
 @media (min-width:1000px){
     header a{
         font-size:1vw;
+    }
+    .about-us{
+        margin: 0% 2% 0% 2%;
+    }
+    footer .footer-content{
+        display:flex;
+        flex-direction: row;
+        font-size: 1.2vw;
     }
 }

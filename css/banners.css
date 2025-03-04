@@ -16,8 +16,28 @@
 }
 
 .banner-1 h1{
-    color:rgb(255, 255, 255);
-    text-shadow:1vw 1vw 1vw black;
+    color:rgb(65, 188, 219);
+    text-shadow:0.5vw 0.5vw 0.5vw rgb(0, 0, 0);
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.banner-2{
+    top:2vw;
+    background-image: url(../img/banner-2.jpg);
+    height:15vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:0.5vw solid rgb(53, 53, 53);
+}
+
+.banner-2 h1{
+    color:rgb(65, 188, 219);
+    text-shadow:0.5vw 0.5vw 0.5vw rgb(0, 0, 0);
     font-size: 8vw;
     font-weight: bold;
 }
