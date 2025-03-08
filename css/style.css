@@ -40,7 +40,10 @@ header a:hover{
     
 }
 .info a{
-    color:rgb(66, 54, 149);
+    color:rgb(130, 165, 231);
+}
+.info a:hover{
+    color:rgb(88, 129, 207);
 }
 
 footer{
