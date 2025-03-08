@@ -10,6 +10,7 @@ header{
     border-radius: 0.5vw;
     position: sticky;
     top:10px;
+    z-index: 1000;
 
 }
 
@@ -28,6 +29,13 @@ header a:hover{
     background-color: rgb(52, 160, 56);
     transition: 0.5s;
     border-radius: 0.5vw;
+}
+
+header img{
+    display:flex;
+    width:5vw;
+    height:3.9vw;
+    padding-top:0.2vw;
 }
 
 .about-us{
@@ -74,8 +82,12 @@ footer a:hover{
 
 
 .credits{
-    color:rgb(146, 146, 146);
-    font-size: 1.2vw;
+    position: fixed;
+    bottom: 0px;
+    font-size: 2vw;
+    color: rgba(87, 87, 87, 0.1); /* Semi-transparent watermark text */
+    user-select: none;
+    z-index: 1000;
 }
 .iframe-box{
     margin-left: auto;
@@ -92,6 +104,70 @@ footer a:hover{
 .triedy{
     color:rgb(0, 255, 153);
 }
+
+/*galeria*/
+.gallery{
+    text-align: center;
+}
+.grid{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.image-container{
+    width: 30vw;
+    padding:10px;
+    position: relative;
+}
+.image-container img {
+    width: 100%;
+
+}
+
+.image-text{
+    position: absolute;
+    transform: translateX(-50%);
+    left:50%;
+    color: rgb(255, 255, 255);
+    bottom:20px;
+    font-size: 2.5vw;
+    text-shadow: 5px 5px 5px black;
+    user-select: none;
+}
+
+.image-container img:hover{
+    width:29vw;
+    object-fit: scale-down;
+    transition:0.3s;
+}
+
+
+@media (max-width:600px){
+.row{
+    flex-direction: column;
+    
+}
+.grid{
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.image-container img{
+    width: 35vw;
+}
+
+.credits{
+    font-size: 3.5vw;
+}
+}    
+
+
 
 
 @media (min-width:1000px){
